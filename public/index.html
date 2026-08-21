@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini-Style Ultra AI Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gemini-layout">
+        <aside class="sidebar">
+            <div class="top-sidebar">
+                <button class="new-chat-btn" onclick="location.reload()">+ নতুন চ্যাট</button>
+            </div>
+            <div class="model-picker">
+                <label for="aiModel">এআই মডেল চয়ন করুন:</label>
+                <select id="aiModel">
+                    <option value="gemini" selected>Gemini (Google)</option>
+                    <option value="chatgpt">ChatGPT (OpenAI)</option>
+                    <option value="grok">Grok (xAI)</option>
+                    <option value="meta">Meta AI (Llama)</option>
+                </select>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="chat-topbar">
+                <h1 class="brand-title">AI Hub <span class="version">Ultra v2</span></h1>
+            </header>
+
+            <div class="chat-viewport" id="chatViewport">
+                <div class="welcome-box">
+                    <h2>হ্যালো গৌরব! 👋</h2>
+                    <p>আপনার ব্যক্তিগত মাল্টি-মডেল এআই হাব প্রস্তুত। যেকোনো প্রশ্ন করুন।</p>
+                </div>
+            </div>
+
+            <div class="input-container-wrapper">
+                <div class="input-box">
+                    <textarea id="userInput" placeholder="এখানে আপনার প্রম্পট লিখুন..." rows="1"></textarea>
+                    <button id="sendBtn" class="send-icon-btn">➤</button>
+                </div>
+                <div class="footer-note">এআই ভুল করতে পারে। গুরুত্বপূর্ণ তথ্য যাচাই করে নিন।</div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
